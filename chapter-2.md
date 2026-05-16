@@ -64,11 +64,11 @@ Little helpers — for you."
 So Wendy built three new helpers.
 Each one was a specialist.
 
-- **Clause-Checker** read contracts and looked for risky clauses. Just that.
-- **Law-Watcher** read the news every morning for new laws. Just that.
+- **Contract-Reviewer** read vendor and customer contracts, looking for risky clauses. Just that.
+- **NDA-Triager** handled NDAs — different rules, faster turnaround. Just that.
 - **Renewal-Reminder** kept a calendar of all the contracts, and pinged Wendy a month before each one ran out. Just that.
 
-*Illustration:* A character-sheet page like the cast list at the start of a play. Three new sprites, each a slightly different color: Clause-Checker (deep blue, holding a magnifying glass), Law-Watcher (leafy green, holding a newspaper), Renewal-Reminder (warm orange, holding a tiny calendar). Each has a one-line job description under its name.
+*Illustration:* A character-sheet page like the cast list at the start of a play. Three new sprites, each a slightly different color: Contract-Reviewer (deep blue, holding a magnifying glass), NDA-Triager (leafy green, holding a small stack of NDAs), Renewal-Reminder (warm orange, holding a tiny calendar). Each has a one-line job description under its name.
 
 ---
 

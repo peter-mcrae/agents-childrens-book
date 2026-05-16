@@ -133,10 +133,10 @@ Together, they got more done than Wendy ever had, all by herself.
 "You know what?" said Wendy.
 "I could build *another* one."
 "Another agent?" said the tiny helper.
-"Yes! One for tracking new laws. One for answering questions from our salespeople. One for reminding me when renewals are coming up."
+"Yes! One just for vendor contracts. One just for NDAs. One for reminding me when renewals are coming up."
 "Build away," said the agent. "We're easier than people think."
 
-*Illustration:* Wendy at a whiteboard, sketching out three more little glowing sprites with name tags: "Law-Watcher," "Sales Helper," "Renewal Reminder." The original agent watches with a grin, hovering by her shoulder like a co-conspirator.
+*Illustration:* Wendy at a whiteboard, sketching out three more little glowing sprites with name tags: "Contract-Reviewer," "NDA-Triager," "Renewal-Reminder." The original agent watches with a grin, hovering by her shoulder like a co-conspirator.
 
 ---
 
