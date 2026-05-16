@@ -92,7 +92,15 @@ main#book {
   display: flex; align-items: center; justify-content: center;
   min-height: 380px;
 }
-.spread .illus svg { max-width: 100%; height: auto; }
+.spread .illus svg,
+.cover-illus svg,
+.remember svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 460px;
+  margin: 0 auto;
+}
 
 /* Cover */
 .cover {
@@ -159,11 +167,15 @@ footer button {
   background: var(--paper);
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 8px;
-  padding: 10px 22px;
+  padding: 12px 22px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px; color: var(--navy);
   cursor: pointer; transition: all 0.15s;
   box-shadow: 0 1px 2px var(--paper-shadow);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(31, 58, 95, 0.15);
+  min-height: 44px;
+  min-width: 88px;
 }
 footer button:hover:not(:disabled) {
   background: var(--navy); color: var(--paper); transform: translateY(-1px);
@@ -193,11 +205,32 @@ footer button:disabled { opacity: 0.4; cursor: not-allowed; }
 .toc-content li .ch-tag { color: var(--gold); font-weight: 700; font-size: 10px; letter-spacing: 0.15em; }
 
 @media (max-width: 800px) {
-  .spread { grid-template-columns: 1fr; padding: 32px; gap: 24px; min-height: auto; }
+  .spread {
+    grid-template-columns: 1fr;
+    padding: 28px;
+    gap: 20px;
+    min-height: auto;
+    /* illustration above text reads better on a phone */
+  }
+  .spread .illus {
+    min-height: auto;
+    order: -1;
+  }
+  .spread .illus svg,
+  .cover-illus svg,
+  .remember svg {
+    max-width: 360px;
+  }
   .spread .text { font-size: 18px; }
-  .cover h1 { font-size: 36px; }
-  .chapter-title { padding: 60px 32px; }
-  .chapter-title h2 { font-size: 32px; }
+  .cover { padding: 48px 28px; }
+  .cover h1 { font-size: 34px; }
+  .chapter-title { padding: 60px 28px; }
+  .chapter-title h2 { font-size: 30px; }
+  .remember { padding: 48px 28px; }
+  footer { padding: 14px 16px 24px; gap: 8px; }
+  footer button { padding: 14px 18px; font-size: 15px; }
+  header { padding: 12px 18px; font-size: 12px; }
+  main#book { padding: 12px; }
 }
 
 /* ============ ANIMATIONS ============ */
@@ -1449,6 +1482,27 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')  { e.preventDefault(); prev(); }
   if (e.key === 'Escape') closeToc();
 });
+
+// Swipe nav — left swipe = next, right swipe = prev.
+// Only counts as a swipe when horizontal movement dominates, so vertical
+// scrolling of long pages still works.
+let touchStartX = 0, touchStartY = 0, touchStartT = 0;
+book.addEventListener('touchstart', e => {
+  if (e.touches.length !== 1) return;
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  touchStartT = Date.now();
+}, { passive: true });
+book.addEventListener('touchend', e => {
+  if (e.changedTouches.length !== 1) return;
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  const dt = Date.now() - touchStartT;
+  if (dt > 600) return;                               // too slow — not a swipe
+  if (Math.abs(dx) < 50) return;                      // not far enough
+  if (Math.abs(dx) < Math.abs(dy) * 1.2) return;      // mostly vertical
+  if (dx < 0) next(); else prev();
+}, { passive: true });
 
 const tocModal = document.getElementById('toc-modal');
 const tocList = document.getElementById('toc-list');
