@@ -330,13 +330,15 @@ function sprite({ cx=0, cy=0, size=80, color='amber', glow=true, float=true, moo
     ? `<line x1="${-size*0.1}" y1="${size*0.15}" x2="${size*0.1}" y2="${size*0.15}" stroke="#1c2a3a" stroke-width="2.5" stroke-linecap="round"/>`
     : '';
   return `
-    <g transform="translate(${cx},${cy})" class="${float ? 'float' : ''}">
-      ${glow ? `<circle r="${size*0.72}" fill="${c.glow}" opacity="0.45" class="sprite-glow"/>` : ''}
-      <ellipse cx="0" cy="0" rx="${size*0.52}" ry="${size*0.46}" fill="${c.body}"/>
-      <ellipse cx="${-size*0.18}" cy="${-size*0.18}" rx="${size*0.12}" ry="${size*0.06}" fill="white" opacity="0.5"/>
-      <g class="eye"><circle cx="${-size*0.16}" cy="${eyeY}" r="${eyeR}" fill="#1c2a3a"/><circle cx="${-size*0.14}" cy="${eyeY-eyeR*0.3}" r="${eyeR*0.3}" fill="white"/></g>
-      <g class="eye"><circle cx="${size*0.16}" cy="${eyeY}" r="${eyeR}" fill="#1c2a3a"/><circle cx="${size*0.18}" cy="${eyeY-eyeR*0.3}" r="${eyeR*0.3}" fill="white"/></g>
-      ${mouth}
+    <g transform="translate(${cx},${cy})">
+      <g class="${float ? 'float' : ''}">
+        ${glow ? `<circle r="${size*0.72}" fill="${c.glow}" opacity="0.45" class="sprite-glow"/>` : ''}
+        <ellipse cx="0" cy="0" rx="${size*0.52}" ry="${size*0.46}" fill="${c.body}"/>
+        <ellipse cx="${-size*0.18}" cy="${-size*0.18}" rx="${size*0.12}" ry="${size*0.06}" fill="white" opacity="0.5"/>
+        <g class="eye"><circle cx="${-size*0.16}" cy="${eyeY}" r="${eyeR}" fill="#1c2a3a"/><circle cx="${-size*0.14}" cy="${eyeY-eyeR*0.3}" r="${eyeR*0.3}" fill="white"/></g>
+        <g class="eye"><circle cx="${size*0.16}" cy="${eyeY}" r="${eyeR}" fill="#1c2a3a"/><circle cx="${size*0.18}" cy="${eyeY-eyeR*0.3}" r="${eyeR*0.3}" fill="white"/></g>
+        ${mouth}
+      </g>
     </g>`;
 }
 
