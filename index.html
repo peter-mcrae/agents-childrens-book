@@ -888,6 +888,232 @@ humming: () => `
     <rect x="0" y="0" width="380" height="280" fill="#ffd87a" opacity="0.06"/>
   </svg>`,
 
+// ============ CHAPTER 3 ============
+
+ch3Meta: () => `
+  <svg viewBox="0 0 360 280">
+    <rect x="40" y="220" width="280" height="14" fill="#8b6a4a"/>
+    ${wendy({ cx: 220, cy: 140, scale: 1.2, mood: 'happy' })}
+    <g transform="translate(110, 200)">
+      <rect x="-32" y="-22" width="64" height="42" rx="2" fill="#fff9ec" stroke="#c8932a" stroke-width="2"/>
+      <text x="0" y="-6" text-anchor="middle" font-family="serif" font-size="7" fill="#1f3a5f">WENDY</text>
+      <text x="0" y="4"  text-anchor="middle" font-family="serif" font-size="7" fill="#1f3a5f">AND THE</text>
+      <text x="0" y="14" text-anchor="middle" font-family="serif" font-size="7" fill="#1f3a5f">TINY HELPER</text>
+    </g>
+    ${sprite({ cx: 110, cy: 170, size: 30 })}
+    <text x="180" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-style="italic" fill="#6a7280">"I want a helper of my own."</text>
+  </svg>`,
+
+ch3Download: () => `
+  <svg viewBox="0 0 360 260">
+    <path d="M 30 70 L 180 22 L 330 70 L 330 230 L 30 230 Z" fill="none" stroke="#c8932a" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.45"/>
+    <text x="50" y="60" font-family="sans-serif" font-size="9" fill="#c8932a" opacity="0.75" font-style="italic">a home for your helper</text>
+    <rect x="60" y="80" width="240" height="150" rx="8" fill="#1c2a3a"/>
+    <rect x="72" y="92" width="216" height="126" fill="#fff9ec"/>
+    <text x="180" y="124" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1f3a5f" font-weight="700">claude.com</text>
+    <text x="180" y="146" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6a7280">Claude Desktop</text>
+    <rect x="125" y="166" width="110" height="32" rx="5" fill="#c8932a"/>
+    <text x="180" y="187" text-anchor="middle" font-family="sans-serif" font-size="12" fill="white" font-weight="700">Download</text>
+    <path d="M 50 230 L 310 230 L 320 245 L 40 245 Z" fill="#1c2a3a"/>
+  </svg>`,
+
+ch3SignIn: () => `
+  <svg viewBox="0 0 360 260">
+    <rect x="60" y="30" width="240" height="200" rx="8" fill="#1c2a3a"/>
+    <rect x="72" y="42" width="216" height="176" fill="#fff9ec"/>
+    <text x="180" y="74" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1f3a5f" font-weight="700">Sign in to Claude</text>
+    <g transform="translate(260, 64)">
+      <rect x="-22" y="-11" width="44" height="22" rx="11" fill="#c8932a"/>
+      <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-size="9" fill="white" font-weight="700">PRO</text>
+    </g>
+    <rect x="100" y="100" width="160" height="26" rx="3" fill="white" stroke="#9aa5b1" stroke-width="1"/>
+    <text x="110" y="118" font-family="sans-serif" font-size="11" fill="#1c2a3a">wendy@bigco.com</text>
+    <rect x="100" y="134" width="160" height="26" rx="3" fill="white" stroke="#9aa5b1" stroke-width="1"/>
+    <text x="110" y="152" font-family="sans-serif" font-size="11" fill="#9aa5b1">••••••••</text>
+    <rect x="100" y="174" width="160" height="30" rx="5" fill="#1f3a5f"/>
+    <text x="180" y="194" text-anchor="middle" font-family="sans-serif" font-size="12" fill="white" font-weight="700">Continue</text>
+  </svg>`,
+
+ch3Tabs: () => `
+  <svg viewBox="0 0 360 240">
+    <defs>
+      <marker id="arrCw" viewBox="0 0 10 10" refX="5" refY="2" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 10 5 L 0 10 Z" fill="#c8932a"/>
+      </marker>
+    </defs>
+    <rect x="30" y="40" width="300" height="170" rx="8" fill="#fff9ec" stroke="#1c2a3a" stroke-width="2"/>
+    <rect x="40" y="50" width="80" height="34" fill="#f0e0bf"/>
+    <text x="80" y="71" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6a7280">Chat</text>
+    <rect x="125" y="50" width="80" height="34" fill="#f0e0bf"/>
+    <text x="165" y="71" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6a7280">Code</text>
+    <rect x="210" y="50" width="80" height="34" fill="#fff9ec" stroke="#c8932a" stroke-width="2.5"/>
+    <text x="250" y="71" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3a5f" font-weight="700">Cowork</text>
+    <path d="M 250 120 L 250 92" stroke="#c8932a" stroke-width="2.5" marker-end="url(#arrCw)"/>
+    ${sprite({ cx: 250, cy: 155, size: 38 })}
+    <text x="180" y="200" text-anchor="middle" font-family="sans-serif" font-size="11" font-style="italic" fill="#6a7280">"That's where I'll live."</text>
+  </svg>`,
+
+ch3Role: () => `
+  <svg viewBox="0 0 360 280">
+    <rect x="30" y="20" width="300" height="245" rx="8" fill="#fff9ec" stroke="#1c2a3a" stroke-width="2"/>
+    <text x="180" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1f3a5f" font-weight="700">What's your role?</text>
+    ${[
+      { x: 60,  y: 80,  label: 'Legal',     highlight: true },
+      { x: 155, y: 80,  label: 'Marketing' },
+      { x: 250, y: 80,  label: 'Design' },
+      { x: 60,  y: 160, label: 'Sales' },
+      { x: 155, y: 160, label: 'Finance' },
+      { x: 250, y: 160, label: 'Ops' }
+    ].map(r => `
+      <g transform="translate(${r.x},${r.y})">
+        <rect x="0" y="0" width="70" height="62" rx="6" fill="${r.highlight ? '#fff9ec' : '#fff9ec'}" stroke="${r.highlight ? '#c8932a' : '#9aa5b1'}" stroke-width="${r.highlight ? '2.5' : '1'}"/>
+        ${r.highlight ? `<circle cx="60" cy="10" r="8" fill="#7fb069"/><path d="M 55 10 L 59 14 L 65 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>` : ''}
+        <text x="35" y="38" text-anchor="middle" font-family="sans-serif" font-size="11" fill="${r.highlight ? '#1f3a5f' : '#6a7280'}" font-weight="${r.highlight ? '700' : '400'}">${r.label}</text>
+      </g>
+    `).join('')}
+  </svg>`,
+
+ch3Plugin: () => `
+  <svg viewBox="0 0 360 280">
+    <g transform="translate(180, 145)">
+      <path d="M -85 35 L 85 35 L 75 88 L -75 88 Z" fill="#c8932a"/>
+      <path d="M -88 35 L 88 35 L 78 0 L -78 0 Z" fill="#f6b94a" class="float"/>
+      <rect x="-50" y="48" width="100" height="22" rx="3" fill="#fff9ec"/>
+      <text x="0" y="63" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1f3a5f" font-weight="700">LEGAL PLUGIN</text>
+      <g class="scale-in" style="animation-delay:0.2s">${sprite({ cx: -40, cy: -8, size: 30, color: 'blue', glow: false })}</g>
+      <g class="scale-in" style="animation-delay:0.5s">${sprite({ cx: 0, cy: -20, size: 32, color: 'green', glow: false })}</g>
+      <g class="scale-in" style="animation-delay:0.8s">${sprite({ cx: 40, cy: -8, size: 30, color: 'orange', glow: false })}</g>
+    </g>
+    <rect x="135" y="245" width="90" height="28" rx="5" fill="#c8932a"/>
+    <text x="180" y="264" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" font-weight="700">Install ✓</text>
+  </svg>`,
+
+ch3Tools: () => `
+  <svg viewBox="0 0 360 260">
+    <rect x="30" y="30" width="300" height="210" rx="8" fill="#fff9ec" stroke="#1c2a3a" stroke-width="2"/>
+    <text x="180" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" letter-spacing="2" fill="#1f3a5f" font-weight="700">CONNECT YOUR TOOLS</text>
+    ${[
+      { x: 80,  label: 'Email',     color: '#c95252', delay: 0.1 },
+      { x: 152, label: 'Drive',     color: '#7fb069', delay: 0.4 },
+      { x: 224, label: 'Calendar',  color: '#5b8fc7', delay: 0.7 },
+      { x: 296, label: 'Contracts', color: '#c8932a', delay: 1.0 }
+    ].map(t => `
+      <g class="scale-in" style="animation-delay:${t.delay}s">
+        <rect x="${t.x-30}" y="90" width="60" height="60" rx="6" fill="white" stroke="${t.color}" stroke-width="2"/>
+        <circle cx="${t.x}" cy="118" r="11" fill="${t.color}"/>
+        <text x="${t.x}" y="172" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#1f3a5f" font-weight="600">${t.label}</text>
+        <circle cx="${t.x+22}" cy="98" r="7" fill="#7fb069"/>
+        <path d="M ${t.x+18} 98 L ${t.x+21} 101 L ${t.x+26} 95" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      </g>
+    `).join('')}
+    <text x="180" y="215" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6a7280" font-style="italic">these are your helper's hands</text>
+  </svg>`,
+
+ch3Slash: () => `
+  <svg viewBox="0 0 360 290">
+    <rect x="40" y="30" width="280" height="38" rx="6" fill="white" stroke="#9aa5b1" stroke-width="1.5"/>
+    <text x="56" y="56" font-family="monospace" font-size="16" fill="#1f3a5f" font-weight="700">/</text>
+    <line x1="66" y1="40" x2="66" y2="60" stroke="#1f3a5f" stroke-width="1.5">
+      <animate attributeName="opacity" values="0;1;1;0" dur="1s" repeatCount="indefinite"/>
+    </line>
+    <rect x="40" y="76" width="280" height="200" rx="6" fill="white" stroke="#9aa5b1" stroke-width="1.5"/>
+    ${[
+      { y: 100, cmd: '/review-contract', desc: 'Read & flag risky clauses', highlight: true },
+      { y: 145, cmd: '/summarize-nda',   desc: 'Bullet-point summary' },
+      { y: 190, cmd: '/check-renewals',  desc: 'Find upcoming renewals' },
+      { y: 235, cmd: '/draft-response',  desc: 'Reply to a legal demand' }
+    ].map(it => `
+      <g>
+        ${it.highlight ? `<rect x="44" y="${it.y-16}" width="272" height="38" fill="#ffd87a" opacity="0.35"/>` : ''}
+        <rect x="54" y="${it.y-9}" width="24" height="24" rx="4" fill="#c8932a"/>
+        <text x="66" y="${it.y+8}" text-anchor="middle" font-family="monospace" font-size="14" fill="white" font-weight="700">/</text>
+        <text x="88" y="${it.y+2}" font-family="monospace" font-size="12" fill="#1f3a5f" font-weight="700">${it.cmd}</text>
+        <text x="88" y="${it.y+18}" font-family="sans-serif" font-size="10" fill="#6a7280">${it.desc}</text>
+      </g>
+    `).join('')}
+  </svg>`,
+
+ch3Plan: () => `
+  <svg viewBox="0 0 360 280">
+    <rect x="40" y="30" width="280" height="225" rx="8" fill="#fff9ec" stroke="#1f3a5f" stroke-width="2"/>
+    <text x="60" y="60" font-family="sans-serif" font-size="11" letter-spacing="3" fill="#c8932a" font-weight="700">PLAN</text>
+    <text x="60" y="78" font-family="sans-serif" font-size="11" fill="#6a7280">"Here's what I'll do:"</text>
+    ${[
+      { y: 110, n: 1, text: 'Read the contract' },
+      { y: 145, n: 2, text: 'Check the risky-clause list' },
+      { y: 180, n: 3, text: 'Flag anything for Wendy' }
+    ].map(s => `
+      <circle cx="72" cy="${s.y}" r="12" fill="#1f3a5f"/>
+      <text x="72" y="${s.y+5}" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" font-weight="700">${s.n}</text>
+      <text x="94" y="${s.y+5}" font-family="serif" font-size="14" fill="#1f3a5f">${s.text}</text>
+    `).join('')}
+    <rect x="60" y="210" width="110" height="32" rx="5" fill="#c8932a"/>
+    <text x="115" y="231" text-anchor="middle" font-family="sans-serif" font-size="12" fill="white" font-weight="700">Approve ✓</text>
+    <rect x="185" y="210" width="100" height="32" rx="5" fill="white" stroke="#9aa5b1" stroke-width="1.5"/>
+    <text x="235" y="231" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3a5f">Edit</text>
+  </svg>`,
+
+ch3Working: () => `
+  <svg viewBox="0 0 360 280">
+    <rect x="40" y="30" width="200" height="230" rx="4" fill="#fff9ec" stroke="#c8932a" stroke-width="1.5"/>
+    <text x="60" y="58" font-family="serif" font-size="10" fill="#1c2a3a" font-weight="700">Vendor Agreement</text>
+    <line x1="60" y1="68" x2="220" y2="68" stroke="#c8932a" stroke-width="0.5" opacity="0.5"/>
+    ${[80, 96, 112, 132, 148, 168, 184, 204, 220, 240].map((y, i) => {
+      const hl = [2, 5, 8].includes(i);
+      return `<line x1="60" y1="${y}" x2="220" y2="${y}" stroke="${hl ? '#ffd87a' : '#1c2a3a'}" stroke-width="${hl ? '9' : '0.8'}" opacity="${hl ? 0.75 : 0.55}" stroke-linecap="round"/>`;
+    }).join('')}
+    <g transform="translate(265, 40)">
+      <text x="0" y="14" font-family="sans-serif" font-size="9" letter-spacing="2" fill="#c8932a" font-weight="700">PROGRESS</text>
+      ${[
+        { y: 44, label: 'Read' },
+        { y: 78, label: 'Checked rules' },
+        { y: 112, label: 'Wrote summary' }
+      ].map(s => `
+        <circle cx="10" cy="${s.y}" r="9" fill="#7fb069"/>
+        <path d="M 5 ${s.y} L 8 ${s.y+3} L 14 ${s.y-4}" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <text x="25" y="${s.y+4}" font-family="sans-serif" font-size="10" fill="#1f3a5f">${s.label}</text>
+      `).join('')}
+      <text x="0" y="170" font-family="sans-serif" font-size="9" fill="#6a7280" font-style="italic">3 risky clauses</text>
+      <text x="0" y="184" font-family="sans-serif" font-size="9" fill="#6a7280" font-style="italic">highlighted in gold</text>
+    </g>
+  </svg>`,
+
+ch3Customize: () => `
+  <svg viewBox="0 0 360 280">
+    <rect x="40" y="30" width="280" height="225" rx="8" fill="#fff9ec" stroke="#1f3a5f" stroke-width="2"/>
+    <text x="60" y="62" font-family="sans-serif" font-size="11" letter-spacing="2" fill="#c8932a" font-weight="700">CUSTOMIZE</text>
+    <text x="60" y="86" font-family="sans-serif" font-size="11" fill="#6a7280">Add a rule for your helper:</text>
+    <rect x="60" y="102" width="240" height="60" rx="5" fill="white" stroke="#9aa5b1" stroke-width="1.5"/>
+    <text x="72" y="126" font-family="serif" font-size="13" fill="#1f3a5f">Always flag payment terms</text>
+    <text x="72" y="146" font-family="serif" font-size="13" fill="#1f3a5f">longer than 30 days.</text>
+    <rect x="60" y="180" width="80" height="30" rx="5" fill="#c8932a"/>
+    <text x="100" y="200" text-anchor="middle" font-family="sans-serif" font-size="12" fill="white" font-weight="700">Save</text>
+    ${sprite({ cx: 270, cy: 210, size: 50 })}
+    <g transform="translate(180, 198)">
+      <rect x="0" y="-14" width="64" height="22" rx="11" fill="white" stroke="#1f3a5f" stroke-width="1"/>
+      <path d="M 58 8 L 64 14 L 60 2 Z" fill="white" stroke="#1f3a5f" stroke-width="1"/>
+      <text x="32" y="2" text-anchor="middle" font-family="serif" font-size="11" fill="#1f3a5f" font-style="italic">"Got it."</text>
+    </g>
+  </svg>`,
+
+ch3Calm: () => `
+  <svg viewBox="0 0 380 280">
+    <rect x="0" y="0" width="380" height="280" fill="#ffd87a" opacity="0.05"/>
+    <rect x="20" y="220" width="340" height="14" fill="#8b6a4a"/>
+    <rect x="200" y="140" width="140" height="90" rx="4" fill="#1c2a3a"/>
+    <rect x="206" y="146" width="128" height="74" fill="#fff9ec"/>
+    ${sprite({ cx: 270, cy: 184, size: 42, glow: false })}
+    ${wendy({ cx: 100, cy: 145, scale: 1.1, mood: 'happy' })}
+    <rect x="60" y="195" width="24" height="24" rx="2" fill="#a85a3a"/>
+    <ellipse cx="72" cy="195" rx="12" ry="3" fill="#5d3520"/>
+    <path d="M 84 200 Q 96 204 84 214" fill="none" stroke="#a85a3a" stroke-width="2.5"/>
+    <circle cx="335" cy="55" r="24" fill="#fff9ec" stroke="#1f3a5f" stroke-width="1.5"/>
+    <line x1="335" y1="55" x2="335" y2="38" stroke="#1f3a5f" stroke-width="2"/>
+    <line x1="335" y1="55" x2="346" y2="55" stroke="#1f3a5f" stroke-width="1.5"/>
+    <circle cx="335" cy="55" r="2" fill="#1f3a5f"/>
+    <text x="335" y="98" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6a7280" font-style="italic">just ten minutes</text>
+  </svg>`,
+
 };
 
 const pages = [
@@ -1059,6 +1285,89 @@ const pages = [
     'When one agent gets confused, give it teammates — <span class="tag">sub-agents</span>.',
     'Each sub-agent does <span class="tag">one thing</span> well, with its own job, tools, and fences.',
     'The main agent\'s job becomes knowing <span class="tag">who to ask</span>.'
+  ]},
+
+  { type: 'chapter', n: 3, title: 'How Wendy Built Her Helper',
+    blurb: 'Wendy decides she wants a helper of her own. This chapter walks through the actual setup — in Claude Desktop, using Cowork.' },
+
+  { type: 'spread', ch: 3, beat: 1, illus: 'ch3Meta', text: [
+    'Wendy had finished the story.',
+    '"Right!" she said. "I want a helper of my own."',
+    'But where do helpers live?'
+  ]},
+  { type: 'spread', ch: 3, beat: 2, illus: 'ch3Download', text: [
+    '"First," said the tiny helper, "you need a place for me to live."',
+    '"Like a house?" asked Wendy.',
+    '"More like an app.',
+    'It\'s called <span class="concept">Claude Desktop</span>.',
+    'You can download it from claude.com. It\'s free."'
+  ]},
+  { type: 'spread', ch: 3, beat: 3, illus: 'ch3SignIn', text: [
+    'Wendy downloaded the app and opened it.',
+    'She signed in with her work email.',
+    '(Her company already had a Claude paid plan — helpers like this one need one.)'
+  ]},
+  { type: 'spread', ch: 3, beat: 4, illus: 'ch3Tabs', text: [
+    'Inside the app, Wendy saw three tabs at the top.',
+    '<em>Chat</em> was for asking questions.',
+    '<em>Code</em> was for building software.',
+    '<em>Cowork</em> was for putting helpers to work.',
+    '"That one," said the helper. "That\'s where I\'ll live."'
+  ]},
+  { type: 'spread', ch: 3, beat: 5, illus: 'ch3Role', text: [
+    'Wendy clicked <span class="concept">Cowork</span>.',
+    'A friendly screen appeared.',
+    '"What\'s your role?" it asked.',
+    'Lawyer. Marketer. Designer. Salesperson. Finance. Many to choose from.',
+    'Wendy picked <em>Legal</em>.'
+  ]},
+  { type: 'spread', ch: 3, beat: 6, illus: 'ch3Plugin', text: [
+    '"Now," said Claude, "let me suggest a <span class="concept">plugin</span> for you.',
+    'A plugin is like a starter pack of helpers, already trained for your job."',
+    'For Wendy, that meant the <em>Legal Plugin</em> — a Contract Reader, an NDA Triager, a Renewal Tracker, and more.',
+    'She clicked <em>Install</em>.'
+  ]},
+  { type: 'spread', ch: 3, beat: 7, illus: 'ch3Tools', text: [
+    '"Now your helpers need hands," said Claude.',
+    'Wendy connected her tools: her email, her files, her calendar, her contract storage.',
+    '"These are your <span class="concept">tools</span>," said Claude. "Your helpers\' hands."',
+    '"Just like in the story!" said Wendy.'
+  ]},
+  { type: 'spread', ch: 3, beat: 8, illus: 'ch3Slash', text: [
+    '"Last step," said Claude. "Try a <span class="concept">skill</span>."',
+    'Wendy typed <em>/</em> in the chat box.',
+    'A menu popped up: <em>/review-contract</em>, <em>/summarize-nda</em>, <em>/check-renewals</em>, and more.',
+    'Each one was a job a helper already knew how to do.'
+  ]},
+  { type: 'spread', ch: 3, beat: 9, illus: 'ch3Plan', text: [
+    'Wendy picked <em>/review-contract</em> and pasted in a vendor agreement.',
+    'The helper didn\'t just go to work.',
+    'It made a plan first.',
+    '"I\'ll read the contract, check our risky-clause list, and flag anything for you. Sound good?"',
+    '"Sound great," said Wendy. She clicked <em>Approve</em>.'
+  ]},
+  { type: 'spread', ch: 3, beat: 10, illus: 'ch3Working', text: [
+    'Wendy watched the helper work.',
+    'Step by step. Note by note. Each tool used in turn.',
+    'When it finished, it showed her a tidy summary, with the risky clauses highlighted in gold.'
+  ]},
+  { type: 'spread', ch: 3, beat: 11, illus: 'ch3Customize', text: [
+    '"Want to add your own rules?" said Claude.',
+    'Wendy clicked <em>Customize</em>.',
+    'She typed: "Always flag payment terms longer than 30 days."',
+    'The helper learned it on the spot.'
+  ]},
+  { type: 'spread', ch: 3, beat: 12, illus: 'ch3Calm', text: [
+    'Wendy leaned back.',
+    'She had a helper. A real one.',
+    'Living in her laptop. Connected to her tools. Following her rules.',
+    'And it all took less than ten minutes.'
+  ]},
+
+  { type: 'remember', ch: 3, items: [
+    'Helpers live in <span class="tag">Claude Desktop</span>, inside the <span class="tag">Cowork</span> tab.',
+    'A <span class="tag">plugin</span> is a starter pack of helpers for your role. <span class="tag">Tools</span> are their hands.',
+    'Type <span class="tag">/</span> to pick a <span class="tag">skill</span> — a job your helper already knows how to do.'
   ]},
 
   { type: 'end' }

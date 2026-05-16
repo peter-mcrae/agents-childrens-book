@@ -16,6 +16,7 @@ The protagonist is **Wendy, a General Counsel** drowning in vendor contracts. Ea
 |---|-------|--------------------|
 | 1 | Wendy and the Tiny Helper | What an agent is; the loop (read → think → act); system prompt; tools; evals; guardrails |
 | 2 | The Helper Gets Helpers | Sub-agents; specialization; delegation; why narrow scope works better than one super-helper |
+| 3 | How Wendy Built Her Helper | The actual setup in Claude Desktop using Cowork — role-matched plugins, connecting tools, running a skill via `/` commands |
 
 Future chapters could cover: memory, human-in-the-loop, when *not* to use an agent, evaluating an agent's work over time.
 
